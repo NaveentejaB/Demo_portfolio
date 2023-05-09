@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import { useContext } from 'react';
+// import { themeContext } from './contest';
+import { useState } from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Intro from './components/Intro/Intro';
+import Service from './components/Service/Service';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 
 function App() {
+  const [state, setState] = useState('light');
+  const toggle = () =>{
+    if(state === 'dark')
+      setState('light');
+    else
+      setState('dark');
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"
+    style={{
+      background : (state === 'dark')? 'black':'white',
+      color :(state === 'dark') ? 'white' :'black'
+    }}>
+    
+    {/* <button className='button' onClick={toggle}>click me baby!</button> */}
+    <Navbar onClick={toggle}/>
+    <Intro />
+    <Service/>
+    <Experience/>
+    <Footer/>
     </div>
   );
 }

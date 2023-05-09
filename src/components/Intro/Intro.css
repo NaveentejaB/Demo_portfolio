@@ -1,0 +1,133 @@
+.intro{
+    display: flex;
+    height: 95vh;
+    margin-top: 6rem;
+}
+.i-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 5%;
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.i-name>:nth-child(1){
+    color:  var(--black);
+    font-weight: bold;
+    font-size: 4.2rem;
+}
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 4.8rem;
+}
+.i-name>:nth-child(3){
+    font-weight: 100;
+    font-size: 16px;
+    color:var(--grey);
+    margin-top: 8px;
+}
+.i-button{
+    width: 8rem;
+    height: 2 rem;
+}
+
+
+.i-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0rem;
+}
+.i-icons>*{
+    transform: scale(0.6);
+}
+.i-icons>*:hover{
+    cursor: pointer;
+}
+
+
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.i-right>:nth-child(1){
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+}
+.i-right>:nth-child(2){
+    top: -4.6rem;
+    transform: scale(0.67);
+    left: -3rem;
+}
+.i-right>:nth-child(3){
+    transform: scale(1);
+    left: 28%;
+}
+.i-right>:nth-child(4){
+
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+.i-right>:nth-child(5){
+    transform: scale(0.8); 
+}
+.i-right>:nth-child(6){
+    transform: scale(0.7);  
+}
+
+
+.blurr{
+    position: absolute;
+    height: 11rem;
+    width: 21rem;
+    left: 55rem;
+    top: 10rem;
+    background:#C1F5FF ;
+    filter: blur(72px);
+}
+.blur{
+    position: absolute;
+    height: 11rem;
+    width: 15rem;
+    bottom: 80rem;
+    background: #d686eb;
+    filter: blur(72px);
+}
+body{
+    padding: 0px;
+    margin:0px;
+    width:100%;
+    height:100vh;
+     background: radial-gradient(#74b9ff,#0984e3);
+    }
+    
+    .wrapper{
+    width: 130px;
+    height:100px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    .s-blur{
+        margin-left: 10px;
+    }
+
+
